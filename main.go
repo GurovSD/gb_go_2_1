@@ -41,6 +41,7 @@ func divide(x int, y int) (res int, err error) {
 
 func main() {
 
+	// функция, вызывающая панику при деленеии на ноль
 	div, err := divide(2, 0)
 	if err != nil {
 		fmt.Print(err)
